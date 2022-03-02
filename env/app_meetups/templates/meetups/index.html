@@ -6,19 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'meetups/styles/base.css' %}">
+    <link rel="stylesheet" href="{% static 'meetups/styles/all-meetups.css' %}">
     <title>All Meetups</title>
 </head>
 <body>
-    <h1>All Meetups</h1>
+    <header id="main-header">
+        <nav><a href="/meetups" id="main-logo">Django Meetups</a></nav>
+        <h1>We got great meetups coming up!</h1>
+        <p>Find the one that best suits your needs!</p>
+    </header>
+    <main>
+        <section>
+            <h2>Upcoming meetups</h2>
+            <ol>
+                {% for meetup_item in meetups %}
+                    <li class="meetup-item">
+                        <article>
+                            <div class="meetup-summary">
+                                <div class="meetup-image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="meetup-details">
+                                    <h3>{{ meetup_item.title }}</h3>
+                                    <address>{{ meetup_item.location }}</address>
+                                </div>
+                            </div>
+                            <div class="meetup-actions">
+                                <a href="" class="btn">More details</a>
+                            </div>
+                        </article>
+                    </li>
+                {% endfor %}
+            </ol>
+        </section>
+    </main>
+    
+</body>
+</html>
+
+<!-- <h1>All Meetups</h1>
     <p>Hello from the App Meetups!</p>
 
     {% if show_meetups %}
-        <!-- <h2>{{ meetups.0.title }}</h2> -->
+        <h2>{{ meetups.0.title }}</h2>
         {% for meetup_item in meetups %}
             <p>{{ meetup_item.title }}</p>
         {% endfor %}
     {% else %}
         <h2>No meetups to show.</h2>
-    {% endif %}
-</body>
-</html>
+    {% endif %} -->

@@ -7,8 +7,8 @@ from django.shortcuts import render
 def index(request):
     # dictionary containing meetups information
     meetups = [
-        { 'title': '1st meetup' },
-        { 'title': '2nd meetup' }
+        { 'title': '1st meetup', 'location': 'New York', 'slug': 'a-fst-meetup' },
+        { 'title': '2nd meetup', 'location': 'Paris', 'slug': 'a-snd-meetup' }
     ]
 
     return render(request, "meetups/index.html", {
