@@ -5,4 +5,13 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, "meetups/index.html")
+    # dictionary containing meetups information
+    meetups = [
+        { 'title': '1st meetup' },
+        { 'title': '2nd meetup' }
+    ]
+
+    return render(request, "meetups/index.html", {
+        'show_meetups': True,
+        'meetups': meetups
+    })
