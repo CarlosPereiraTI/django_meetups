@@ -5,3 +5,6 @@ Course that help to understand how to work with Django, the Python's most popula
 - Application setup.
 - Tamplates and URL's.
 - Data models.
+- Render data in html files.
+
+# Hasta min 1.04 hecho y funcionando.
