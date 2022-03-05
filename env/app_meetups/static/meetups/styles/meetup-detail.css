@@ -52,7 +52,7 @@ address span {
 }
 
 #details footer a {
-  color: #350490;
+  color: #e53e1e;
   text-decoration: none;
   font-weight: bold;
 }
@@ -88,3 +88,20 @@ address span {
   margin-bottom: 0.5rem;
   color: #880824;
 }
+
+a :visited {
+  color: #e53e1e;
+}
+
+a :link {
+  color: #e53e1e;
+}
+
+a :hover {
+  color: #e53e1e;
+}
+
+a :active {
+  color: #e53e1e;
+}
+
