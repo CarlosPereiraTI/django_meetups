@@ -7,4 +7,4 @@ Course that help to understand how to work with Django, the Python's most popula
 - Data models.
 - Render data in html files.
 
-# Next: Using the Admin Panel 02:02:58
+# Next: Setting one-to-many Relations 02:42:35
