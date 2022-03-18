@@ -1,4 +1,6 @@
+from datetime import timedelta
 from operator import mod
+from time import timezone
 from django.db import models
 
 # Create your models here.
@@ -20,7 +22,10 @@ class Participant(models.Model):
 
 
 class Meetup(models.Model):
+
     title = models.CharField(max_length=200)
+    organizer_email = models.EmailField()
+    date = models.DateField()
     slug = models.SlugField(unique=True)
     description = models.TextField()
     image = models.ImageField(upload_to='images')
@@ -29,3 +34,5 @@ class Meetup(models.Model):
 
     def __str__(self):
         return f'{self.title} - {self.slug}'
+
+    
