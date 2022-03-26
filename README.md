@@ -6,5 +6,5 @@ Course that help to understand how to work with Django, the Python's most popula
 - Templates and URL's.
 - Data models.
 - Render data in html files.
-
-# Next: Handling Form Submission 03:18:11
+- Django forms
+- Handling forms submission.
