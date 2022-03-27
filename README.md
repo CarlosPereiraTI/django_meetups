@@ -1,5 +1,5 @@
-# django_meetups
-Youtube course URL: https://www.youtube.com/watch?v=t7DrJqcUviA
+# django_meetups project
+Youtube course URL (Academind): https://www.youtube.com/watch?v=t7DrJqcUviA
 Course that help to understand how to work with Django, the Python's most popular web framework.
 - Project setup.
 - Application setup.
@@ -8,3 +8,5 @@ Course that help to understand how to work with Django, the Python's most popula
 - Render data in html files.
 - Django forms
 - Handling forms submission.
+
+The project was created using Python 3.10 and Django 4.0
