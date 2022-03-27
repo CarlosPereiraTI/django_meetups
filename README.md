@@ -8,5 +8,3 @@ Course that help to understand how to work with Django, the Python's most popula
 - Render data in html files.
 - Django forms
 - Handling forms submission.
-
-# next: From Modelform to Form 03:39:09
