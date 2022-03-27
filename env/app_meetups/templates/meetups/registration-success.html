@@ -2,15 +2,11 @@
 
 {% load static %}
 
-{% block title %}
-    Your Register was successfully!
-(% endblock %)
+{% block title %}Your Register was successfully!{% endblock %}
 
-{% block site_css %}
-    <link rel="stylesheet" href="{% static 'meetups/styles/registration-confirmation.css' %}">
-(% endblock %)
+{% block site_css %}<link rel="stylesheet" href="{% static 'meetups/styles/registration-confirmation.css' %}">{% endblock %}
 
-{% blcok main_heading %}
+{% block main_heading %}
     Thanks for signing up!
 {% endblock %}
 
@@ -25,9 +21,4 @@
         <p>Of course you can sign up for more than one meetup!</p>
         <p><a href="/meetups" class="btn">Explore our meetups</a></p>
     </section>
-
-
-    <!-- MIN 3.30.58 -->
-
-
 {% endblock %}
